@@ -1,0 +1,44 @@
+.hero {
+
+    &__img {
+        background-image: url('../img/Background.png');
+        width: 100%;
+        height: 1100px;
+        margin-top: -120px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__subtitle {
+        margin-top: 288px;
+        display: flex;
+        align-items: center;
+        margin-left: 196px;
+
+        &_line {
+            width: 72px;
+            height: 2px;
+            background: #FFC178;
+            margin-right: 32px;
+        }
+
+        &_text {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #FFC178;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 100px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        margin-left: 196px;
+        margin-top: 32px;
+    }
+}
