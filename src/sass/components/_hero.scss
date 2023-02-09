@@ -42,4 +42,18 @@
         margin-left: 196px;
         margin-top: 32px;
     }
+
+    @media screen and(max-width:1400px) {
+        &__title{
+            font-size: 76px;
+        }
+    }
+    @media screen and(max-width:1200px) {
+        &__title{
+            font-size: 66px;
+        }
+        &__img{
+            height: 1000px;
+        }
+    }
 }
