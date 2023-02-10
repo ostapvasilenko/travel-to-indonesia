@@ -1,3 +1,42 @@
-.slider{
-    margin-top: 250px;
+.slider {
+    background-color: #000000;
+    padding: 250px 0px 50px 0px;
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &_line {
+            width: 72px;
+            height: 2px;
+            background: #FBD784;
+        }
+
+        &_text {
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: #FBD784;
+            margin: 0px 30px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 87px;
+        color: #FFFFFF;
+        padding: 0px 75px;
+    }
+
+    &__text {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0px 25px;
+        margin-bottom: 50px;
+    }
 }
