@@ -12,6 +12,8 @@
     width: 100%;
 
     &__menu {
+        display: flex;
+        justify-content: center;
 
         nav {
             ul {
@@ -28,6 +30,7 @@
                         color: #FFFFFF;
                         text-decoration: none;
                         transition: 0.2s;
+                        margin: 0px 20px;
                     }
 
                     :hover {
@@ -43,6 +46,7 @@
         display: flex;
         align-items: center;
         cursor: pointer;
+        margin-top: -15px;
 
         &_img {
             width: 14px;
@@ -53,9 +57,22 @@
         &_text {
             font-size: 17px;
             color: #FFFFFF;
+            margin: 0;
         }
     }
-
+    @media screen and(max-width:1200px) {
+        &__menu {
+            nav {
+                ul {
+                    li {
+                        a {
+                            margin: 0px 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media screen and(max-width:991px) {
         &__menu {
             display: none;
@@ -65,11 +82,13 @@
             margin-top: -30px;
         }
     }
+
     @media screen and(max-width:575px) {
         .container {
             margin: 0px 45px;
             max-width: 100%;
         }
+
         &__search {
             margin-right: 40px;
         }
