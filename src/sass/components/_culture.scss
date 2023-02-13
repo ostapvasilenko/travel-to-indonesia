@@ -107,12 +107,13 @@
 
     @media screen and(max-width:575px) {
         &__info {
-            &_title{
+            &_title {
                 font-size: 40px;
                 line-height: 1.2em;
             }
         }
-        &__img{
+
+        &__img {
             height: 450px;
         }
     }
