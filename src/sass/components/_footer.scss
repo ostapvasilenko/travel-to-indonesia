@@ -17,4 +17,28 @@
         color: #FFFFFF;
         margin-top: 56px;
     }
+
+    &__email {
+
+        &_line {
+            background: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.3;
+            height: 1px;
+        }
+
+        &_text {
+            font-size: 15px;
+            color: #FFFFFF;
+            margin-left: 10px;
+            margin-bottom: 30px;
+        }
+
+        &_btn {
+            background: #FFA343;
+            border-radius: 8px 8px 0px 0px;
+            height: 70px;
+            width: 70px;
+        }
+    }
 }
