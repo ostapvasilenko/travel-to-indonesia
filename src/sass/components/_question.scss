@@ -1,6 +1,8 @@
 .question {
     background-color: #000000;
-    padding: 50px 0px;
+    padding: 20px 0px 50px;
+    display: flex;
+    align-items: center;
 
     &__img {
         background-image: url('../img/question.png');
@@ -9,25 +11,71 @@
         background-size: contain;
         width: 175px;
         height: 65px;
+        margin-top: 5px;
     }
 
-    &__text {
-        font-size: 22px;
-        line-height: 29px;
-        letter-spacing: -0.3px;
-        color: #FFFFFF;
-        margin: 0px 56px 0px 0px;
+    &__info {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        &_text {
+            font-size: 22px;
+            line-height: 29px;
+            letter-spacing: -0.3px;
+            color: #FFFFFF;
+            margin: 0px 56px 0px 0px;
+        }
+
+        &_btn {
+            background: #FFA343;
+            border-radius: 8px;
+            padding: 24px 70px;
+            border: #FFA343;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 22px;
+            color: #000000;
+        }
     }
 
-    &__btn {
-        background: #FFA343;
-        border-radius: 8px;
-        padding: 24px 70px;
-        border: #FFA343;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 17px;
-        line-height: 22px;
-        color: #000000;
+    @media screen and(max-width:991px) {
+        &__img {
+            width: 140px;
+        }
+
+        &__info {
+
+            &_btn {
+                width: 240px;
+            }
+        }
     }
+
+    @media screen and(max-width:767px) {
+        &__img {
+            display: none;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    @media screen and(max-width:500px) {
+        &__info {
+
+            &_text {
+                font-size: 19px;
+                margin-right: 15px;
+            }
+
+            &_btn {
+                padding: 16px 0px;
+            }
+        }
+    }
+
 }
