@@ -2,10 +2,6 @@
     background-color: #000000;
     padding: 20px 0px 0px 0px;
     margin-top: -2px;
-    display: flex;
-    align-items: center;
-
-
 
     &__img {
         background-image: url('../img/infoimg.png');
@@ -19,6 +15,7 @@
     &__subtitle {
         display: flex;
         align-items: center;
+        margin-top: 88px;
 
         &_line {
             width: 72px;
@@ -44,6 +41,7 @@
         line-height: 87px;
         color: #FFFFFF;
         margin-top: 28px;
+        padding-right: 50px;
     }
 
     &__text {
@@ -70,6 +68,16 @@
         }
     }
 
+    #size {
+        padding-left: 100px;
+    }
 
+    @media screen and(max-width:1400px) {
+        &__subtitle {
+            margin-top: 60px;
+        }
+    }
+    @media screen and(max-width:1400px) {
+    }
 
 }
