@@ -99,9 +99,10 @@
     }
 
     @media screen and(max-width:575px) {
-        &{
+        & {
             padding: 0px 0px 20px 0px;
         }
+
         &__title {
             font-size: 24px;
         }
@@ -116,7 +117,8 @@
         #size {
             margin-top: 0px;
         }
-        &__icons{
+
+        &__icons {
             margin-top: 15px;
         }
     }
