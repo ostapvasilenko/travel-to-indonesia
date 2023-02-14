@@ -30,6 +30,7 @@
             letter-spacing: 6px;
             text-transform: uppercase;
             color: #FFC178;
+            margin-bottom: 0;
         }
     }
 
@@ -91,8 +92,12 @@
     }
 
     @media screen and(max-width:575px) {
+        &__img {
+            height: 700px;
+        }
 
         &__subtitle {
+            margin-top: 200px;
 
             &_text {
                 font-size: 14px;
@@ -104,6 +109,7 @@
             margin-left: 0px;
             line-height: 50px;
             text-align: center;
+            margin-top: 30px;
         }
     }
 }
