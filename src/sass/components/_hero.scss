@@ -93,11 +93,11 @@
 
     @media screen and(max-width:575px) {
         &__img {
-            height: 700px;
+            height: 550px;
         }
 
         &__subtitle {
-            margin-top: 200px;
+            margin-top: 150px;
 
             &_text {
                 font-size: 14px;
@@ -105,7 +105,7 @@
         }
 
         &__title {
-            font-size: 38px;
+            font-size: 40px;
             margin-left: 0px;
             line-height: 50px;
             text-align: center;
